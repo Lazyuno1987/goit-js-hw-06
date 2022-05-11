@@ -24,3 +24,4 @@ listGalery.style.display = "flex";
 listGalery.style.listStyle = "none";
 listGalery.childNodes[1].style.marginRight = "15px";
 listGalery.childNodes[1].style.marginLeft = "15px";
+
