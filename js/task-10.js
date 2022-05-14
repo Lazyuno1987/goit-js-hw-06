@@ -10,6 +10,7 @@ buttonCreateEl.addEventListener("click", amountItem);
 buttonDestroyEl.addEventListener("click", destroyBoxes);
 
 function amountItem() {
+
   const amount = inputEl.value;
   createBoxes(amount);
 }
@@ -21,7 +22,7 @@ function createBoxes(amount) {
     newBoxes.style.width = `${boxSize + i * 10}px`;
     newBoxes.style.height = `${boxSize + i * 10}px`;
     newBoxes.style.backgroundColor = getRandomHexColor();
-    newDivBoxEl.appendChild(newBoxes);
+    newDivBoxEl.append(newBoxes);
   }
 }
 
@@ -29,3 +30,4 @@ function destroyBoxes() {
   newDivBoxEl.innerHTML = "";
   inputEl.value = 0;
 }
+
