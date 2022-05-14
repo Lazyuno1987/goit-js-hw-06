@@ -17,7 +17,7 @@ console.log(listGalery);
 const creatItem = images
   .map(
     ({ url, alt }) =>
-      `<li class ="item-gallery"><img class = "img-gallery" src = ${url} alt = ${alt} width = 100% </li>`
+      `<li class ="item-gallery"><img class = "img-gallery" src = ${url} alt = "${alt}" width = 100% /></li>`
   )
   .join("");
 
