@@ -7,11 +7,19 @@ function onBlurInput(event) {
     Number(event.target.value.length) === Number(inputLength.dataset.length)
   ) {
     inputEl.classList.add("valid");
+    console.log(inputEl.classList.contains('valid') )
   } else {
     inputEl.classList.add("invalid");
+     console.log(inputEl.classList.contains('invalid') )
   }
 }
+
+
 inputEl.addEventListener("focus", () => {
+  if (inputEl.classList.contains('invalid') === true) {
   inputEl.classList.remove("invalid");
-  inputEl.value = "";
+  } else {
+    inputEl.classList.remove("valid");
+  }
+  
 });
